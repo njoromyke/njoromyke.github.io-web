@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Open+Sans:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet');
+html{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+
+
+	
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav.bg-transparent {
+    background: transparent;
+    transition: all .3s ease;
+}
+
+nav.navbar.navbar-expand-md.bg-dark.navbar-dark.fixed-top:hover{
+	background: #34455e!important;
+	transition: all .3s ease-in;
+
+}
+
+
+
+
+nav ul li.nav-item a{
+	color: #f1f1f1!important;
+	font-family: 'Open Sans', sans-serif;
+	transition: all .5s ease-in ;
+	
+}
+
+nav ul li.nav-item a:hover{
+	color: deepskyblue !important;
+}
+
+@media only screen and (min-width: 992px){
+	.nav-scroll{
+		margin: 0 35px;
+	    transition: all .6s ease;
+	}
+
+	.logo{
+		display: block!important;
+		transition: all .9s ease;
+	}
+}
+
+@media only screen and (max-width: 992px){
+	img#logo{
+		display: none!important;
+	}
+}
+
+.bg-menu {
+   background: #34495e!important;
+   
+}
+
+button.navbar-toggler{
+	color:white !important;
+	background:  transparent !important;
+	border-radius: 0  !important;
+	border: 1px solid white !important;
+}
+button.navbar-toggler:hover{
+	background: deepskyblue !important;
+	color: white !important;
+	outline: none !important;
+
+}
+.slider{
+	background: url('..//image/cover-bg-1.jpg');
+	width: 100%;
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	top: 0%;
+	background-attachment: fixed;
+}
+
+.slider .content{
+	color: white;
+	text-align: center;
+}
+.slider h2{
+	padding-top: 100px;
+}
+.content-name{
+	color: deepskyblue;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.slider-buttons{
+	display: inline-block;
+	
+}
+.slider-buttons .btn1 {
+	padding: 8px 8px ;
+	color: white;
+	border: 1px solid white;
+	background-color: transparent;
+	transition: all .4s ease-in;
+	margin: 20px;
+}
+.slider-buttons .btn1 a{
+	color: white;
+}
+.slider-buttons .btn1:hover{
+	color: white;
+	background-color: deepskyblue;
+	border: deepskyblue;
+}
+.slider-buttons .btn1 a:hover{
+	text-decoration: none;
+}
+.slider-buttons .btn2 {
+	padding: 8px 8px ;
+	color: white;
+	border: 1px solid white;
+	background-color: transparent;
+	transition: all .4s ease-in;
+}
+.slider-buttons .btn2 a{
+	color: white;
+}
+.slider-buttons .btn2:hover{
+	color: white;
+	background-color: orangered;
+	border: orangered;
+}
+.slider-buttons .btn2 a:hover{
+	text-decoration: none;
+}
+.slider .me{
+	position: relative;
+	padding-top: 50px;
+	margin-left: 50%;
+}
+/*======== services section============= */
+.service-area
+{
+    margin-top: 30px;
+}
+
+.service-area p
+{
+   margin-bottom: -5px;
+}
+
+
+
+
+.service-wrap {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+    
+}
+
+.service-wrap::before, .service-wrap::after {
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background: #34495e;    
+    
+}
+
+.service-wrap::before{
+    top: -37px;
+    left: 100%;  
+    
+}
+
+.service-wrap:hover:before{    
+    left: -27px;
+    opacity: 1;
+    
+}
+
+
+.service-wrap::after{
+     right: 100%;
+     bottom: -37px;
+    
+}
+
+.service-wrap:hover:after{
+     right: -27px;
+     opacity: 1;
+    
+}
+.service-wrap:hover{
+    color: white;
+}
+.service-wrap:hover h3{
+    color: white;
+}
+.service-wrap:hover h3 ::after{
+    color: white;
+}
+.service-icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+.service-wrap:hover .service-icon i{
+    transform: rotate(360deg);
+}
+.service-wrap h3{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+}
+.service-wrap p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* end service */
+
+/* =====================portfolio section====================== */
+
+.nav .nav-tabs{
+	background-color: deepskyblue !important;
+}
+.image-holer i{
+	font-size: 50px;
+	color: white;
+	background: deepskyblue;
+	height: 70px;
+	width: 70px;
+	border: 2px solid white;
+	border-radius: 50%;
+	line-height: 70px;
+}
+/* ===================== end portfolio section====================== */
+
+
+/* ===============works section================================== */
+
+.work{
+    margin-top: 70px;
+
+}
+.row.no-gutters [class*=col-] 
+{   padding-left: 0;
+    padding-right: 0;
+}
+.img-wrapper{
+    overflow: hidden;
+}
+.img-wrapper img{
+    transition: transform .5s ease;
+    width: 100%;
+}
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/* ===============works section================================== */
+::-webkit-scrollbar{
+	width: 25px;
+	
+
+}
+::-webkit-scrollbar-track{
+	border: 7px solid #232943;
+	box-shadow: inset 0 0 2,5px 2px rgba(0,0,0,0.5);
+	color: black;
+}
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(45deg,
+	#7CFC00,#7FFF00);
+	border-radius: 3px;
+}
+
+
+
+/* --------===========scrollbar end===================== */
+
+/* ========================testimonials=============================== */
+
+
+
+.carousel-inner img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 3px solid white;
+    padding: 5px;
+}
+.testimonials{
+    background-image: url('..//image/reviews.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+.testimonials .carousel-indicators{
+    bottom: -60px;
+}
+.border-bottom{
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+}
+.carousel-inner p{
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+
+
+
+/* ==============================testimonials end=========================== */
+/* ==============contact sect=================================== */
+
+.col-contact{
+	margin-top: 20px;
+}
+
+
+/* ======================end section=========================== */
+/* ===============footer========================== */
+.footer{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #34495e;
+	width: 100%;
+	margin-top: 20px;
+}
+.text-sc{
+	color: white;
+	text-transform: uppercase;
+}
+.footer-icons i{
+	
+	font-size: 20px;
+	color: deepskyblue;
+	border: 1px solid white;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background-color: white;
+	transition: all .4s ease-in;
+	
+}
+
+.footer-icons i:hover{
+	color: white;
+	background-color: deepskyblue;
+	border: 1px solid deepskyblue;
+	transform: rotate(360deg);
+
+}
+.footer .line{
+	width: 200px;
+	height: 2px;
+	color: white;
+}
+.footer .love{
+	color: white;
+}
+.love i{
+	color: red;
+}
+
+.love p{
+	font-size: 18px;
+	color: greenyellow;
+}
+
+/* ==============end footer=========================== */
